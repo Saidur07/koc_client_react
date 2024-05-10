@@ -7,7 +7,7 @@ import {
   resendEmail,
   getCategories,
   getCountries,
-} from "../axios/axios";
+} from "../../axios/axios";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";

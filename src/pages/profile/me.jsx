@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import Navbar from "../components/layouts/Navbar";
-import Footer from "../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
 import ProfileHeader from "../../components/profile/ProfileHeader";
 import LeftSideBar from "../../components/profile/LeftSideBar";
 import MainContent from "../../components/profile/MainContent";
-import Experiences from "../components/profile/Experiences";
+import Experiences from "../../components/profile/Experiences";
 import ProtectedRoute from "../../components/layouts/ProtectedRoute";
 import ProfileCompletion from "../../components/profile/ProfileCompletion";
 

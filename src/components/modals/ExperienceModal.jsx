@@ -3,7 +3,7 @@ import Modal from "../ui/Modal";
 import { RxCross1 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import { addExperience, editExperience, getProfile } from "../../axios/axios";
-import { setLoading } from "../../../redux/reducers/loadingSlice";
+import { setLoading } from "../../redux/reducers/loadingSlice";
 import { useForm } from "react-hook-form";
 import { format } from "date-fns";
 

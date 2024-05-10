@@ -14,7 +14,7 @@ import { Rating, StickerStar } from "@smastrom/react-rating";
 import { AnimatePresence } from "framer-motion";
 import DeleteModal from "../modals/DeleteModal";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteJob, getJobs } from "../axios/axios";
+import { deleteJob, getJobs } from "../../axios/axios";
 import JobsModal from "../modals/JobsModal";
 import {
   addBookmark,

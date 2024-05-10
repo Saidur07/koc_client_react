@@ -3,7 +3,7 @@ import { Rating, StickerStar } from "@smastrom/react-rating";
 import React, { useState } from "react";
 import { IoShareSocial } from "react-icons/io5";
 import { MdEdit, MdJoinInner, MdOutlineLocationOn } from "react-icons/md";
-import { editProfile, getProfile } from "../axios/axios";
+import { editProfile, getProfile } from "../../axios/axios";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import JobsModal from "../modals/JobsModal";
 import { format } from "date-fns";
+import toast from "react-hot-toast";
 const ProfileHeader = ({ userProfile, isMine }) => {
   const dispatch = useDispatch();
   const [pfpLoading, setPfpLoading] = useState(false);

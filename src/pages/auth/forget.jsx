@@ -3,10 +3,10 @@ import Grow from "@mui/material/Grow";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { resetPassword } from "../axios/axios";
+import { resetPassword } from "../../axios/axios";
 import toast from "react-hot-toast";
 import { Stack, Typography } from "@mui/material";
-import PasswordField from "../components/form/passwordField";
+import PasswordField from "../../components/form/passwordField";
 
 const LoginPage = () => {
   const dispatch = useDispatch();

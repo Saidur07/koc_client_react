@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/layouts/Navbar";
-import Footer from "../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
 import { useSelector } from "react-redux";
 const Contact = () => {
   const loading = useSelector((state) => state.user?.loading);

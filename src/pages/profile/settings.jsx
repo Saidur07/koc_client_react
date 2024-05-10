@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import Navbar from "../components/layouts/Navbar";
-import Footer from "../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
 import { MdEdit } from "react-icons/md";
 import { AnimatePresence } from "framer-motion";
 import AddSettingsModal from "../../components/modals/SettingsModal";

@@ -1,7 +1,6 @@
-import { getJobById } from "../axios/axios";
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
-import { useLocation, useNavigate } from "react-router-dom";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SlArrowLeftCircle } from "react-icons/sl";
@@ -10,7 +9,7 @@ import { FaStar } from "react-icons/fa6";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { VscUnverified } from "react-icons/vsc";
 import { Rating, StickerStar } from "@smastrom/react-rating";
-import { getCategoriesById, getCountries } from "../../axios/axios";
+import { getCategoriesById, getCountries, getJobById } from "../../axios/axios";
 import Description from "../../components/ui/Description";
 import { setLoading } from "../../redux/reducers/loadingSlice";
 import { AnimatePresence } from "framer-motion";
@@ -24,9 +23,7 @@ const Category = () => {
   // Next.js router
   const navigate = useNavigate();
 
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
+  const { id } = useParams();
   // Component state
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

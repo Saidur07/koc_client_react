@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IconButton, Stack, Typography } from "@mui/material";
-import StartAodornmentField from "../components/form/startAodornmentField";
-import PasswordField from "../components/form/passwordField";
+import StartAodornmentField from "../../components/form/startAodornmentField";
+import PasswordField from "../../components/form/passwordField";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import Grow from "@mui/material/Grow";
@@ -13,7 +13,7 @@ import {
   getProfile,
   loginUser,
   resendEmail,
-} from "../axios/axios";
+} from "../../axios/axios";
 import toast from "react-hot-toast";
 import { MdHome } from "react-icons/md";
 

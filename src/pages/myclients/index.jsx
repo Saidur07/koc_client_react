@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
 import { setLoading } from "../../redux/reducers/loadingSlice";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,12 +15,11 @@ import { VscUnverified } from "react-icons/vsc";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import Description from "../../components/ui/Description";
 import { formatDistance } from "date-fns";
-
-import { useNavigate } from "react-router-dom";
 import ProtectedRoute from "../../components/layouts/ProtectedRoute";
 import { AnimatePresence } from "framer-motion";
 import RatingsModal from "../../components/modals/RatingsModal";
 import ConfirmationModal from "../../components/modals/ConfirmationModal";
+import { useNavigate } from "react-router-dom";
 
 const MyFreelancers = () => {
   const [data, setData] = useState([]);
@@ -28,7 +27,6 @@ const MyFreelancers = () => {
   const userProfile = useSelector((state) => state.user.data);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const [searchTerm, setSearchTerm] = useState("");
   const [active, setActive] = useState([]);
   const [showRatingsModal, setShowRatingsModal] = useState(null);
@@ -373,7 +371,7 @@ const MyFreelancers = () => {
                             className="rounded px-4 py-2 border-red-400 border text-red-400 text-center active:scale-95 transition-all hover:bg-opacity-90"
                             onClick={(e) => {
                               e.stopPropagation();
-                              setShowCancelJobModal(item?._id);
+                              // setShowCancelJobModal(item?._id);
                             }}
                           >
                             Cancel Job
@@ -394,9 +392,9 @@ const MyFreelancers = () => {
                             className="rounded px-4 py-2 border-primary border text-white bg-primary text-center active:scale-95 transition-all hover:bg-opacity-90"
                             onClick={(e) => {
                               e.stopPropagation();
-                              setShowHireNowModal(
-                                item?.client_profile?.user?._id
-                              );
+                              // setShowHireNowModal(
+                              //   item?.client_profile?.user?._id
+                              // );
                             }}
                           >
                             Hire Again

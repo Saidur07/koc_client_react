@@ -3,7 +3,7 @@ import Grow from "@mui/material/Grow";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { verifyEmail } from "../axios/axios";
+import { verifyEmail } from "../../axios/axios";
 import toast from "react-hot-toast";
 import { IconButton, Stack, Typography } from "@mui/material";
 

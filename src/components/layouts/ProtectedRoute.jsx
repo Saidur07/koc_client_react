@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
     if (!token) {
       navigate("/auth/login");
     }
-  }, [router]);
+  }, [navigate]);
 
   return children;
 };

@@ -13,7 +13,7 @@ import {
   getSkills,
   hireNow,
 } from "../../axios/axios";
-import { setLoading } from "../../../redux/reducers/loadingSlice";
+import { setLoading } from "../../redux/reducers/loadingSlice";
 import { useForm } from "react-hook-form";
 import Select from "react-tailwindcss-select";
 import { useNavigate } from "react-router-dom";
@@ -54,7 +54,7 @@ const JobsModal = ({
       )
         .then(() => {
           if (isDetail) {
-            router.reload();
+            window.location.reload();
           } else {
             dispatch(getJobs({ user_id: userProfile?.user?._id, search: "" }));
             dispatch(getBookmarks(userProfile?.user?._id));

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProfile, deleteProject } from "../../axios/axios";
-import { setLoading } from "../redux/reducers/loadingSlice";
-import Description from "../components/ui/Description";
+import { setLoading } from "../../redux/reducers/loadingSlice";
+import Description from "../../components/ui/Description";
 import { AnimatePresence } from "framer-motion";
 import ProjectModal from "../modals/ProjectModal";
 import DeleteModal from "../modals/DeleteModal";

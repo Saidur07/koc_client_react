@@ -1,6 +1,6 @@
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
-import ProjectCard from "../components/projectCard/projectCard";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import ProjectCard from "../../components/projectCard/projectCard";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import JobsModal from "../../components/modals/JobsModal";

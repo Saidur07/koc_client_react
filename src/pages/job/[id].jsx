@@ -1,6 +1,6 @@
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
-import { useLocation, useNavigate } from "react-router-dom";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SlArrowLeftCircle } from "react-icons/sl";
@@ -29,7 +29,7 @@ import {
   deleteJob,
 } from "../../axios/axios";
 import { FaRegBookmark, FaRegUserCircle } from "react-icons/fa";
-import { setLoading } from "../redux/reducers/loadingSlice";
+import { setLoading } from "../../redux/reducers/loadingSlice";
 import { format, formatDistance } from "date-fns";
 
 import Description from "../../components/ui/Description";
@@ -48,9 +48,7 @@ const Job = () => {
   // Next.js router
   const navigate = useNavigate();
 
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
+  const { id } = useParams();
   // Component state
   const userProfile = useSelector((state) => state.user.data);
   const dispatch = useDispatch();

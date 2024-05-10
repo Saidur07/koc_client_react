@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
 import { setLoading } from "../../redux/reducers/loadingSlice";
 import { useDispatch, useSelector } from "react-redux";
 import {

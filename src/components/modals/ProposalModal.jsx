@@ -4,7 +4,7 @@ import { RxCross1 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import { editProposal, getJobById } from "../../axios/axios";
 import { useForm } from "react-hook-form";
-import { setLoading } from "../../../redux/reducers/loadingSlice";
+import { setLoading } from "../../redux/reducers/loadingSlice";
 
 const ProposalModal = ({
   setShowEditProposalModal,

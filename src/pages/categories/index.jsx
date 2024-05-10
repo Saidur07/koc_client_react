@@ -1,5 +1,5 @@
-import Footer from "../components/layouts/Footer";
-import Navbar from "../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
 import Description from "../../components/ui/Description";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";

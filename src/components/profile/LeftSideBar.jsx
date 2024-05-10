@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MdDelete, MdEdit } from "react-icons/md";
-import { getProfile } from "../axios/axios";
 import { useDispatch, useSelector } from "react-redux";
 import { format } from "date-fns";
 import EducationModal from "../modals/EducationModal";
@@ -11,9 +10,9 @@ import Modal from "../ui/Modal";
 import { AnimatePresence } from "framer-motion";
 import LanguageModal from "../modals/LanguageModal";
 import DeleteModal from "../modals/DeleteModal";
-import { setLoading } from "../redux/reducers/loadingSlice";
-import { deleteEducation, deleteLanguage } from "../../axios/axios";
+import { setLoading } from "../../redux/reducers/loadingSlice";
 import OtpModal from "../modals/OtpModal";
+import { deleteEducation, deleteLanguage, getProfile } from "../../axios/axios";
 
 const ProfileHeader = ({ userProfile, isMine }) => {
   // State variables for modals

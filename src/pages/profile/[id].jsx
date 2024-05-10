@@ -2,17 +2,17 @@
 import React, { useEffect, useState } from "react";
 
 // Next.js imports
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 // Redux imports
 import { useDispatch } from "react-redux";
-import { getProfileById } from "../axios/axios";
+import { getProfileById } from "../../axios/axios";
 
 // Material-UI imports
 
 // Custom component imports
-import Navbar from "../components/layouts/Navbar";
-import Footer from "../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
 
 // Icons imports
 import ProfileHeader from "../../components/profile/ProfileHeader";
@@ -24,9 +24,8 @@ import NotFound from "../404";
 
 export default function Profile() {
   // Next.js router
-  const navigate = useNavigate();
 
-  const { id } = router.query;
+  const { id } = useParams();
 
   // Redux state and dispatch
   const dispatch = useDispatch();
