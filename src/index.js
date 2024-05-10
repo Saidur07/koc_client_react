@@ -10,8 +10,12 @@ import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { getProfile } from "./axios/axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+if (typeof window !== "undefined" && localStorage.getItem("accessToken")) {
+  store.dispatch(getProfile());
+}
 root.render(
   <React.StrictMode>
     <BrowserRouter>

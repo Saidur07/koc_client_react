@@ -18,6 +18,7 @@ import Forget from "./pages/auth/forget";
 import OtherProfile from "./pages/profile/[id]";
 import MyProfile from "./pages/profile/me";
 import Settings from "./pages/profile/settings";
+import Messages from "./pages/messages";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path="/profile/me" element={<MyProfile />} />
       <Route path="/profile/:id" element={<OtherProfile />} />
       <Route path="/profile/settings" element={<Settings />} />
+      <Route path="/messages" element={<Messages />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

@@ -150,7 +150,7 @@ const AccountMenu = () => {
   }, [dispatch, userProfile?.user?._id, navigate]);
 
   return (
-    <Stack direction="row">
+    <Stack direction="row" className="lg:md:ml-0 ml-[-10px] lg:md:mt-0 mt-4">
       <div>
         <IconButton
           ref={anchorRef1}

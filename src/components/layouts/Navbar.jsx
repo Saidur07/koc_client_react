@@ -1,9 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
 import { RxCross1 } from "react-icons/rx";
 import { MdMenu } from "react-icons/md";
 import React from "react";
 import { useEffect, useState } from "react";
 import AccountMenu from "./menu";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -23,10 +23,10 @@ const Navbar = () => {
       {/* for mobile */}
       <div className="fixed top-0 left-0 z-50 w-[100vw] lg:hidden block bg-[#111822] px-8 py-5">
         <div className="flex items-center justify-between w-full ">
-          <Link to="/" className="logo ">
+          <Link to="/" className="logo lg:md:text-2xl text-lg">
             KocFreelancing <i className="ri-user-follow-line"></i>
           </Link>
-          {isAuthenticated && <AccountMenu />}
+          {/* {isAuthenticated && <AccountMenu />} */}
           {!showMenu ? (
             <MdMenu
               className="w-7 h-7 text-white"
@@ -130,6 +130,8 @@ const Navbar = () => {
                 </Link>
               </div>
             )}
+
+            {isAuthenticated && <AccountMenu />}
           </div>
         )}
       </div>
@@ -224,7 +226,7 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <div>
+            <div className="lg:md:block hidden">
               {" "}
               {isAuthenticated ? (
                 <AccountMenu />

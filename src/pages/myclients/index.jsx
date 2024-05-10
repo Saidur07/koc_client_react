@@ -161,7 +161,7 @@ const MyFreelancers = () => {
             <p className=" my-4  font-medium text-2xl">Status</p>
             <div className="w-full  border mt-3 rounded-3xl  bg-[#ffffff] overflow-hidden py-3 px-6">
               {/* Checkbox options */}
-              {["", "inprogress", "completed", "canceled", "invited"].map(
+              {["inprogress", "completed", "canceled", "invited"].map(
                 (status, index) => (
                   <div
                     className="flex items-center my-2"
@@ -445,7 +445,7 @@ const MyFreelancers = () => {
           <p className="lg:my-8 my-4  font-medium text-2xl">Status</p>
           <div className="w-full h-1/2 border mt-6 rounded-3xl min-h-[50vh] bg-[#ffffff] overflow-hidden py-3 px-6">
             {/* Checkbox options */}
-            {["", "inprogress", "completed", "canceled", "invited"].map(
+            {["inprogress", "completed", "canceled", "invited"].map(
               (status, index) => (
                 <div
                   className="flex items-center my-2"

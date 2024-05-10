@@ -70,7 +70,7 @@ export const PopularCategory = ({ categories, categoryLoading }) => {
           ) : (
             <div className="flex items-center justify-center">
               <img
-                src="/assets/404.png"
+                src="https://i.ibb.co/mtxszsP/404.png"
                 width={400}
                 height={400}
                 alt="No Data Found"
